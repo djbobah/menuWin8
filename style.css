@@ -6,46 +6,42 @@ body {
 }
 
 .container {
-  margin: 0 auto;
+  margin: 30px auto;
   width: 90%;
-  /* border-style: dashed;
-  border-color: white; */
   box-sizing: border-box;
-  /* margin: 0; */
-  padding: 0px;
-  border-width: 0px;
   font-size: 0;
+  /* overflow-x: scroll; */
+  /* overflow-y: scroll; */
+  text-wrap: nowrap;
 }
 .column {
   margin: 20px;
-  overflow: hidden;
-  border-width: 0px;
-}
-.rectangle > .square {
-  /* border-style: dashed;
-  border-color: white;
-  color: beige; */
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  border-width: 0px;
   display: inline-block;
-  /* display: ; */
-  overflow: hidden;
-
-  /* text-wrap: nowrap; */
+  vertical-align: top;
+}
+.rectangle {
+  margin: 10px 0px;
 }
 
 .square {
-  /* border-style: dashed;
-  border-color: white; */
-  border: 0px;
-  border-width: 0px;
-  box-sizing: border-box;
-  margin: 0px;
+  margin-top: 10px;
   background-color: aqua;
   color: beige;
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
+  width: 100px;
+  height: 100px;
+}
+.column > .square {
+  display: inline-block;
+  margin: 0px 10px 0px 0px;
+}
+
+.rectangle > .square {
+  margin: 0px;
+  border-width: 0px;
+  display: inline-block;
+  width: 105px;
+}
+.bigSquare > div {
+  margin-top: 10px;
+  /* height: 105px; */
 }
