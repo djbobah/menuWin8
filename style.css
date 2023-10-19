@@ -1,0 +1,48 @@
+body {
+  background-image: url("img/windows-8-1-fon-siniy-logotip.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  /* border-style: dashed;
+  border-color: white; */
+  box-sizing: border-box;
+  /* margin: 0; */
+  padding: 0px;
+  border-width: 0px;
+}
+.column {
+  margin: 20px;
+  overflow: hidden;
+  border-width: 0px;
+}
+.rectangle > .square {
+  /* border-style: dashed;
+  border-color: white;
+  color: beige; */
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  border-width: 0px;
+  display: inline-block;
+  display: ;
+  overflow: hidden;
+}
+
+.square {
+  /* border-style: dashed;
+  border-color: white; */
+  border: 0px;
+  border-width: 0px;
+  box-sizing: border-box;
+  margin: 0px;
+  background-color: aqua;
+  color: beige;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
