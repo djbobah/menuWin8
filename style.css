@@ -4,6 +4,30 @@ body {
   background-position: top;
   background-size: cover;
 }
+header {
+  margin: 50px;
+  font-size: 35px;
+  font-weight: 900;
+  font-family: sans-serif;
+  color: wheat;
+  display: flex;
+  justify-content: space-between;
+}
+
+header div {
+  display: inline;
+  align-items: center;
+  vertical-align: middle;
+  color: azure;
+  font-size: 40px;
+}
+header svg {
+  margin: 20px;
+}
+.user {
+  display: inline-block;
+  font-size: 30px;
+}
 
 .container {
   margin: 30px auto;
@@ -11,11 +35,15 @@ body {
   box-sizing: border-box;
   font-size: 0;
   overflow-x: scroll;
-  /* overflow-y: scroll; */
   text-wrap: nowrap;
 }
-.column {
+.group {
   margin: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.column {
   display: inline-block;
   vertical-align: top;
 }
@@ -24,7 +52,7 @@ body {
 }
 
 .square {
-  margin-top: 10px;
+  margin: 0px;
   background-color: aqua;
   color: beige;
   width: 100px;
@@ -32,16 +60,25 @@ body {
 }
 .column > .square {
   display: inline-block;
-  margin: 0px 10px 0px 0px;
+  margin: 10px 10px 0px 0px;
 }
 
 .rectangle > .square {
   margin: 0px;
-  border-width: 0px;
   display: inline-block;
   width: 105px;
 }
-.bigSquare > div {
+.rectangle + .square,
+.rectangle + .square + .square {
+  margin-top: 0px;
+}
+.bigSquare {
   margin-top: 10px;
-  /* height: 105px; */
+}
+.bigSquare > .rectangle {
+  margin: 0;
+}
+.bigSquare > .rectangle > .square {
+  height: 105px;
+  margin: 0;
 }
